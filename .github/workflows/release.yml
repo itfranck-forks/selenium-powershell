@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v1
       - name: Publish
         run: |
-          pwsh -Command "Publish-Module -Path "${Env:GITHUB_WORKSPACE}/Output/Selenium/SeleniumTest2.psd1" -NuGetApiKey ${{secrets.API_KEY}}"
+          pwsh -Command "Publish-Module -Path "${Env:GITHUB_WORKSPACE}/Output/SeleniumTest2/SeleniumTest2.psd1" -NuGetApiKey ${{secrets.API_KEY}}"
