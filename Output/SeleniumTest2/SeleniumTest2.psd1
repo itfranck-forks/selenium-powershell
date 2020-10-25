@@ -26,7 +26,7 @@
         '.\Examples',
         '.\ChangeLog.md',
         '.\README.md',
-        '.\Selenium.psm1'
+        '.\SeleniumTest2.psm1'
         '.\Selenium.tests.ps1'
         '.\Selenium-Binary-Updater.ps1')
 
