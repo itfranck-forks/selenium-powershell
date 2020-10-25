@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       Api_Key: ${{secrets.API_KEY}}
-      test:  1234
+
 
     steps:
       - uses: actions/checkout@v1
       - name: Publish
         run: |
-          pwsh -Command "write-host 'Hello'"
+          pwsh -Command "Publish-Module -Path "${Env:GITHUB_WORKSPACE}/Output/Selenium/Selenium.psd1" -NuGetApiKey ${{secrets.API_KEY}}"
