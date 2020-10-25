@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v1
       - name: Publish
         run: |
-          pwsh -Command "write-host 'Hello';Write-host ${{$env:Api_Key}};Write-Host ${{$env:test}};Write-Host 'World';Publish-Module -Path ${{ github.workspace }}/Output/SeleniumTest2/ -NuGetApiKey ${{$env:Api_Key}}"
+          pwsh -Command "write-host 'Hello';Write-host ${{env:Api_Key}};Write-Host ${{env:test}};Write-Host 'World';Publish-Module -Path ${{ github.workspace }}/Output/SeleniumTest2/ -NuGetApiKey ${{env:Api_Key}}"
