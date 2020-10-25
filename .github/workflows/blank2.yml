@@ -10,7 +10,6 @@ jobs:
       test:  1234
 
     steps:
-      - uses: actions/checkout@v1
       - name: Publish
         run: |
           pwsh -Command "write-host 'Hello'"
