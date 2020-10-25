@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       Api_Key: ${{secrets.API_KEY}}
+      test:  1234
 
     steps:
       - uses: actions/checkout@v1
