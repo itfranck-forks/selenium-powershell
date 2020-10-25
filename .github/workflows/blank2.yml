@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Publish
         run: |
-          pwsh -Command "write-host 'Hello'"
+          pwsh -Command "write-host $env:test'"
