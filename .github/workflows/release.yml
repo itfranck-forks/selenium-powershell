@@ -1,9 +1,7 @@
 name: Release
 
 on:
-  release:
-    types: [edited]
-
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
